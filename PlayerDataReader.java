@@ -1,14 +1,11 @@
 import com.opencsv.CSVReader;
-import com.opencsv.exceptions.CsvException;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.stream.Collectors;
 import java.util.zip.DataFormatException;
 
 public class PlayerDataReader implements PlayerDataReaderInterface {
