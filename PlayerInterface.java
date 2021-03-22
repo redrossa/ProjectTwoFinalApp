@@ -5,5 +5,5 @@ public interface PlayerInterface extends Comparable<PlayerInterface> {
     int getBlocks();
     int getSteals();
     int getAssists();
-    int compareTo(PlayerInterface);
+    int compareTo(PlayerInterface other);
 }
