@@ -16,11 +16,17 @@ public class Frontend {
 	private String name = ""; 
 	
 	public static void main(String[] args) {
-		Backend back = new Backend(); 
+		Backend back = new Backend(args); 
 		// Introduction:
 		System.out.println("Welcome to the NBA Player Catalog!");
-		System.out.println("Press any button to continue to Search Selection Mode: "); 
-		// TODO: implement any button to continue:
+		System.out.println("Press Enter to continue to Search Selection Mode: "); 
+		// press enter to continue:
+		try {        
+			System.in.read();
+		} catch(Exception e){	
+			System.out.println("Please press Enter to contine");
+			main(args); 
+		}
 		searchSelectionMode(back); 
 	}
 	
