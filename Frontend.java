@@ -34,10 +34,11 @@ public class Frontend {
 		
 		@SuppressWarnings("resource")
 		Scanner user = new Scanner(System.in);  
-		System.out.println("  ");
+		// Search Selection Mode Introduction: 
+		System.out.println(" --------------------------------------------------- ");
 		System.out.println("Welcome to Search Selection Mode: ");
 		System.out.println("If you want to search by All-Time NBA Points ranking, press 1.");
-		System.out.println("If you want to search by your favorite player's name, press 2.");
+		System.out.println("If you want to search by your favorite players names, press 2.");
 		
 		int whichMode = 0;
 		try {
