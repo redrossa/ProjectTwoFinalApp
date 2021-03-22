@@ -35,9 +35,4 @@ public class PlayerDataReader implements PlayerDataReaderInterface {
                     parseStat(line[AST])));
         return players;
     }
-
-    public static void main(String[] args) throws Exception {
-        PlayerDataReader dr = new PlayerDataReader();
-        System.out.println(dr.readDataSet(new FileReader("nbaplayers.csv")));
-    }
 }
