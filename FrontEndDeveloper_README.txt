@@ -1,15 +1,15 @@
 FrontEndDeveloper README for Project Two (CS400 @ UW Madison)
 ========================================================
 
-Name of FrontEndDeveloper: <enter your complete name here>
-@wisc.edu Email of FrontEndDeveloper: <enter your @wisc.edu email address here>
-Group: <enter your two letter group name here>
-Team: <enter your team color: red, blue, or purple, here>
+Name of FrontEndDeveloper: Mayank Dornala
+@wisc.edu Email of FrontEndDeveloper: dornala@wisc.edu
+Group: JF
+Team: blue
 
 Files Written by Me:
 --------------------
-<List all files that were within this project that were written by you, and
- include a short description of the purpose that each file servers>
+Frontend.java
+TestFrontend.java
 
 Additional Contributions:
 -------------------------
@@ -20,10 +20,5 @@ Additional Contributions:
 
 Signature:
 ----------
-<Type out your full name here to certify that all of the files written by you
- that are listed above are the product of your individual development efforts
- for this programming assignment.  List below your name, any exceptions, for 
- example: work reused from a previous semester, code examples taken from any 
- website or book, or anything that was not explicitly authored by you for
- the purpose of completing this assigned CS400 project.>
+Mayank Reddy Dornala
  
