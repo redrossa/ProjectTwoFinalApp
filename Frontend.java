@@ -79,7 +79,7 @@ public class Frontend {
 			// Introduction: 
 			System.out.println("--------------------------------------------------------------"); 
 			System.out.println("Search by Player Name: ");
-			System.out.println("Please include a Player's whole name (i.e. \"Lebron James\", not \"James\")"); 
+			System.out.println("Please include a Player's whole name (i.e. \"Giannis Antetokounmpo\", not \"Antetokounmpo\")"); 
 			System.out.println("If you wish to return to search selection mode, type \"exit\" "); 
 			
 			try {
@@ -122,9 +122,9 @@ public class Frontend {
 			
 			// Introduction: 
 			System.out.println("--------------------------------------------------------------"); 
-			System.out.println("Search by AllTimePoints: ");
+			System.out.println("Search by All Time Points: ");
 			System.out.println("Please enter a Points Value to see the player with that number of points. Press 0 to exit back to Search Selection");
-			System.out.println("To see Kareem Abdul-Jabbar, enter 38387 as that is the number of points he scored in his career."); 
+			System.out.println("For Example, to see Kareem Abdul-Jabbar, enter 38387 as that is the number of points he scored in his career."); 
 			
 			try {
 				selectedRank = user.nextInt();
@@ -143,8 +143,11 @@ public class Frontend {
 				searchSelectionMode(backend); 
 			}
 			
-			// search for player name
-			name = backend.getPlayerName(selectedRank); 
+			name = backend.getPlayerName(selectedRank);
+			if (name == null) {
+				System.out.println("No Player has ever recorded " + selectedRank + " points in their career. Try another point total.");
+				rankMode(backend); 
+			}
 			// retrieve player object from backend
 			Player target = (Player) backend.searchByPlayerName(name);
 			
