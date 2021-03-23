@@ -87,6 +87,8 @@ public class Frontend {
 				searchSelectionMode(backend); 
 			}
 			
+			// TODO: Pass Name to Backend and retrieve corresponding player and player data. 
+			
 		}
 	}
 	
