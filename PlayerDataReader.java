@@ -20,7 +20,7 @@ public class PlayerDataReader implements PlayerDataReaderInterface {
     }
 
     @Override
-    public List<PlayerInterface> readDataSet(Reader r) throws FileNotFoundException, DataFormatException, IOException {
+    public List<PlayerInterface> readDataSet(Reader r) throws IOException {
         List<PlayerInterface> players = new LinkedList<>();
         CSVReader csvReader = new CSVReader(r);
         csvReader.skip(1); // skipping header line
