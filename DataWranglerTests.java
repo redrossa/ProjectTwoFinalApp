@@ -29,7 +29,6 @@ public class DataWranglerTests {
     @Before
     public void setUp() {
         csvPath = "nbaplayers.csv";
-
         dataReader = new PlayerDataReader();
     }
 
