@@ -8,15 +8,35 @@ Team: blue
 
 Files Written by Me:
 --------------------
+Main.java
 Frontend.java
-TestFrontend.java
+TestFrontend.java -- will be put in by late deadline
+--------------------
+Frontend Instructions: 
+When program is initialized, it will welcome user. 
+User then presses "Enter" to go into Search Selection Mode
+
+ Search Selection Mode:
+This acts as a main menu where the user can choose how they want to search the catalog. 
+If they wish to search by a player's career points, press 1.
+If they wish to search by a player's name, press 2. 
+
+ Search By Points: 
+By pressing 1, user will enter search by points mode. 
+Here they can enter a points value, and the program will retrieve the player and their stats. 
+For example, entering 38387 will retrieve Kareem Abdul-Jabbar and his career statistics. 
+
+ Search By Name: 
+By pressing 2, user will enter search by name mode. 
+If they enter a player's name with proper capitilization and spacing, 
+program will retrieve player with that name and their career stats. 
+For example, entering "Giannis Antetokounmpo" (not "Giannis" or "Antetokounmpo") will return
+that player and their career stats. 
+
 
 Additional Contributions:
 -------------------------
-<List any additional contributions that you have made toward your team's
- completion of this project.  This might include, but is not limited to things
- like: organizing team communication, creating extra tests or dummy classes,
- assisting team members in any way, etc.>
+
 
 Signature:
 ----------
