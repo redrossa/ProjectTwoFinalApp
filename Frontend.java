@@ -43,6 +43,7 @@ public class Frontend {
 		System.out.println("Welcome to Search Selection Mode: ");
 		System.out.println("If you want to search by All-Time NBA Points, press 1.");
 		System.out.println("If you want to search by your favorite players names, press 2.");
+		System.out.println("To quit the program, press 0.");
 		
 		int whichMode = 0;
 		try {
