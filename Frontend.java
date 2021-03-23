@@ -1,5 +1,4 @@
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 //--== CS400 File Header Information ==--
@@ -16,7 +15,7 @@ public class Frontend {
 	private static String name = ""; 
 	
 	public void main(String[] args) throws IOException {
-		
+
 		Backend back = new Backend(args); 
 		// Introduction:
 		System.out.println("Welcome to the NBA Player Catalog!");
@@ -63,6 +62,12 @@ public class Frontend {
 		}
 	}
 	
+	/**
+	 * Search By Name: allows user to enter a player's whole name with proper capitalization
+	 * and spacing. This will then retrieve that player's info from the Backend and 
+	 * display it to the user. 
+	 * @param backend
+	 */
 	public static void searchByNameMode(Backend backend) {
 		name = "";  
 		
@@ -103,6 +108,11 @@ public class Frontend {
 		}
 	}
 	
+	/**
+	 * Search by total Points: Allows user to enter a points value (integer) and will retrieve first player found in
+	 * RB Tree with that points value. This method will display that player's stat line to the user.
+	 * @param backend
+	 */
 	public static void rankMode(Backend backend) {
 		
 		@SuppressWarnings("resource")
