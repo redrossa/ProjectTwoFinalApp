@@ -88,13 +88,18 @@ public class Frontend {
 				searchSelectionMode(backend); 
 			}
 			
-			// TODO: Pass Name to Backend and retrieve corresponding player and player data. 
 			Player target = (Player) backend.searchByPlayerName(name);
 			// if target doesn't exist: restart name mode. 
 			if(target == null) {
 				System.out.println("Please enter valid player name with proper spacing.");
 				searchByNameMode(backend); 
 			}
+			
+			String targetStatLine = backend.getStatLine(target.getPoints());
+			System.out.println("Name: " + target.getName());
+			System.out.println("Stat Line: ");
+			System.out.println(targetStatLine); 
+					              
 		}
 	}
 	
@@ -134,14 +139,11 @@ public class Frontend {
 			Player target = (Player) backend.searchByPlayerName(name);
 			
 			// Display Player Object Stat Line: 
-			String string = target.toString();
+			System.out.println("Name: " + target.getName());
+			System.out.println("Stat Line: ");
+			String string = backend.getStatLine(selectedRank);
 			System.out.println(string); 
-			
-			
-		}
-		
-		
-		
+		}	
 	}
 
 }
