@@ -52,6 +52,11 @@ public class Frontend {
 			searchSelectionMode(backend); 
 		}
 		
+		// to exit program: 
+		if(whichMode == 0) {
+			System.exit(0);
+		}
+		
 		if(whichMode == 1) {
 			rankMode(backend); 
 		} else if(whichMode == 2) {
