@@ -1,32 +1,45 @@
 IntegrationManager README for Project Two (CS400 @ UW Madison)
 ==============================================================
 
-Name of IntegrationManager: <enter your complete name here>
-@wisc.edu Email of IntegrationManager: <enter your @wisc.edu email address here>
-Group: <enter your two letter group name here>
-Team: <enter your team color: red, blue, or purple, here>
+Name of IntegrationManager: Lilly Boyd
+@wisc.edu Email of IntegrationManager: laboyd2@wisc.edu
+Group: JF
+Team: Blue
 
 Complete List of Files:
 -----------------------
-<List all files that are a part of this project along with the name of the team
- member(s) who were most responsible for implementing the computation within
- each of these files.>
+ Yuven Sundaramoorthy - Backend:
+ BackEndDeveloperTests.java
+ Backend.java
+ BackendInterface.java
+ RedBlackTree.java
+ 
+ Reno Raksi - Data Wrangler:
+ DataWranglerTests.java
+ Player.java
+ PlayerDataReader.java
+ PlayerDataReaderInterface.java
+ PlayerInterface.java
+ 
+ Mayank Dornala - Frontend:
+ Frontend.java
+ Main.java
+ 
 
 Instructions to Build, Run and Test your Project:
 -------------------------------------------------
-<Describe here any instructions that will be needed by course staff to build,
- run, and test this project.>
+
 
 Team Member Contributions:
 --------------------------
-<List the efforts of any members on your team that went above the team's
- expectations for their contributions to this project.  Also identify any
- ways that team members failed to meet the expectations of the group, for
- example: missed deadlines, lack of communication, lack of effort, etc.>
+No one failed to meet expectations. 
+All of them went beyond to help make sure things were on track as I had a family emergency over the weekend.
+Each of them made sure to have their portions of the project completed for the deadline.
+Yuven helped with some last minute bugs, which helped completion happen faster.
+Reno similar to last time also helped whenever anyone had any questions.
+Mayank was helpful with getting the team together to go over the project.
 
 Signature:
 ----------
-<Type out your full name here to certify that to the best of your
- understanding, the contents of this submission represent the efforts of your
- team members. If you are aware of any exceptions to this, please describe them here below your name.>
+Lilly Boyd
  
