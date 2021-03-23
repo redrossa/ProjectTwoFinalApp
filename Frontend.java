@@ -1,7 +1,7 @@
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
 //--== CS400 File Header Information ==--
 //Name: Mayank Dornala
 //Email: dornala@wisc.edu
@@ -15,7 +15,8 @@ public class Frontend {
 	private static int selectedRank = 0; 
 	private static String name = ""; 
 	
-	public static void main(String[] args) {
+	public void main(String[] args) throws IOException {
+		
 		Backend back = new Backend(args); 
 		// Introduction:
 		System.out.println("Welcome to the NBA Player Catalog!");
@@ -41,7 +42,7 @@ public class Frontend {
 		// Search Selection Mode Introduction: 
 		System.out.println("--------------------------------------------------------------"); 
 		System.out.println("Welcome to Search Selection Mode: ");
-		System.out.println("If you want to search by All-Time NBA Points ranking, press 1.");
+		System.out.println("If you want to search by All-Time NBA Points, press 1.");
 		System.out.println("If you want to search by your favorite players names, press 2.");
 		
 		int whichMode = 0;
@@ -73,7 +74,7 @@ public class Frontend {
 			// Introduction: 
 			System.out.println("--------------------------------------------------------------"); 
 			System.out.println("Search by Player Name: ");
-			System.out.println("Please include a Player's whole name (i.e. \"Lebron James\", not \"James\""); 
+			System.out.println("Please include a Player's whole name (i.e. \"Lebron James\", not \"James\")"); 
 			System.out.println("If you wish to return to search selection mode, type \"exit\" "); 
 			
 			try {
@@ -83,12 +84,17 @@ public class Frontend {
 				searchByNameMode(backend); 
 			}
 			
-			if(name.equals("exit")) {
+			if(name.toLowerCase().equals("exit")) {
 				searchSelectionMode(backend); 
 			}
 			
 			// TODO: Pass Name to Backend and retrieve corresponding player and player data. 
-			
+			Player target = (Player) backend.searchByPlayerName(name);
+			// if target doesn't exist: restart name mode. 
+			if(target == null) {
+				System.out.println("Please enter valid player name with proper spacing.");
+				searchByNameMode(backend); 
+			}
 		}
 	}
 	
@@ -101,8 +107,9 @@ public class Frontend {
 			
 			// Introduction: 
 			System.out.println("--------------------------------------------------------------"); 
-			System.out.println("Search by Ranking: ");
-			System.out.println("Please enter a Rank (integer) to see the player at that ranking. Press 0 to exit back to Search Selection");
+			System.out.println("Search by AllTimePoints: ");
+			System.out.println("Please enter a Points Value to see the player with that number of points. Press 0 to exit back to Search Selection");
+			System.out.println("To see Kareem Abdul-Jabbar, enter 38387 as that is the number of points he scored in his career."); 
 			
 			try {
 				selectedRank = user.nextInt();
@@ -121,7 +128,15 @@ public class Frontend {
 				searchSelectionMode(backend); 
 			}
 			
-			// TODO: pass selectedRank to Backend. Backend will return player(s) associated with ranking
+			// search for player name
+			name = backend.getPlayerName(selectedRank); 
+			// retrieve player object from backend
+			Player target = (Player) backend.searchByPlayerName(name);
+			
+			// Display Player Object Stat Line: 
+			String string = target.toString();
+			System.out.println(string); 
+			
 			
 		}
 		
