@@ -123,7 +123,7 @@ public class Frontend {
 			// Introduction: 
 			System.out.println("--------------------------------------------------------------"); 
 			System.out.println("Search by All Time Points: ");
-			System.out.println("Please enter a Points Value to see the player with that number of points. Press 0 to exit back to Search Selection");
+			System.out.println("Please enter a Points Value. Press 0 to exit back to Search Selection");
 			System.out.println("For Example, to see Kareem Abdul-Jabbar, enter 38387 as that is the number of points he scored in his career."); 
 			
 			try {
