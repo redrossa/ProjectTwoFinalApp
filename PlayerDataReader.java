@@ -1,11 +1,18 @@
+// --== CS400 File Header Information ==--
+// Name: Reno Raksi
+// Email: raksi@wisc.edu
+// Team: JF blue
+// Role: Data Wrangler
+// TA: Xinyi
+// Lecturer: Florian
+// Notes to Grader: <optional extra notes>
+
 import com.opencsv.CSVReader;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.Reader;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.zip.DataFormatException;
 
 public class PlayerDataReader implements PlayerDataReaderInterface {
     private static final int PLAYER_NAME = 0;

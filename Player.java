@@ -1,3 +1,12 @@
+// --== CS400 File Header Information ==--
+// Name: Reno Raksi
+// Email: raksi@wisc.edu
+// Team: JF blue
+// Role: Data Wrangler
+// TA: Xinyi
+// Lecturer: Florian
+// Notes to Grader: <optional extra notes>
+
 import java.util.Objects;
 
 public class Player implements PlayerInterface {
@@ -80,5 +89,10 @@ public class Player implements PlayerInterface {
                 ", steals=" + steals +
                 ", assists=" + assists +
                 '}';
+    }
+
+    public static void main(String[] args) {
+        Player p = new Player(null, 0, 0, 0, 0, 0);
+        System.out.println(p instanceof Comparable);
     }
 }
