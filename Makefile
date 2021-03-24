@@ -26,9 +26,24 @@ compile: Main.class Frontend.class Backend.class PlayerDataReader.class
 
 test: testData testBackend testFrontend
 
-testFrontend:
-	@echo "Not implemented yet, still being worked on"
+testFrontend: TestFrontEnd1.class TestFrontEnd2.class TestFrontEnd3.class TestFrontEnd4.class
+	java $(CP) TestFrontEnd1
+	java $(CP) TestFrontEnd2
+	java $(CP) TestFrontEnd3
+	java $(CP) TestFrontEnd4
+	
+TestFrontEnd1.class: TestFrontEnd1.java 
+	java $(CP) TestFrontEnd1.java
+	
+TestFrontEnd2.class: TestFrontEnd2.java 
+	java $(CP) TestFrontEnd2.java
+	
+TestFrontEnd3.class: TestFrontEnd3.java 
+	java $(CP) TestFrontEnd3.java
 
+TestFrontEnd4.class: TestFrontEnd4.java 
+	java $(CP) TestFrontEnd4.java
+	
 testBackend: BackEndDeveloperTests.class
 	java $(CP) TestBackend
 
