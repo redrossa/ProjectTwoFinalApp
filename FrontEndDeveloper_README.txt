@@ -10,7 +10,13 @@ Files Written by Me:
 --------------------
 Main.java
 Frontend.java
-TestFrontend.java -- will be put in by late deadline
+TestFrontEnd1.java
+TestFrontEnd2.java
+TestFrontEnd3.java
+TestFrontEnd4.java
+TestFrontEnd5.java
+***** JUnit Test would not execute on VM as a single file, but worked as seperate files (I have no idea why tbh). So I seperated my tests
+into 5 Junit Tester Classes each with on JUnit Test
 --------------------
 Frontend Instructions: 
 When program is initialized, it will welcome user. 
